@@ -8,6 +8,7 @@ export const PICKLE_DEFINITION = appDefinition({
   name: 'Pickle',
   description: `Pickle Finance helps users to maximize their DeFi yields by auto-compounding their rewards, saving them time and gas.`,
   url: 'https://pickle.finance/',
+
   links: {
     github: 'https://github.com/pickle-finance',
     twitter: 'https://twitter.com/picklefinance',
@@ -15,20 +16,60 @@ export const PICKLE_DEFINITION = appDefinition({
     telegram: 'https://t.me/picklefinance',
     medium: 'https://picklefinance.medium.com/',
   },
+
   groups: {
-    jar: { id: 'jar', type: GroupType.TOKEN, label: 'Jars' },
-    votingEscrow: { id: 'voting-escrow', type: GroupType.POSITION, label: 'Dill' },
-    masterchefFarm: { id: 'masterchef-farm', type: GroupType.POSITION, label: 'Farms' },
-    masterchefV2Farm: { id: 'masterchef-v2-farm', type: GroupType.POSITION, label: 'Farms' },
-    singleStakingFarm: { id: 'single-staking-farm', type: GroupType.POSITION, label: 'Farms' },
+    jar: {
+      id: 'jar',
+      type: GroupType.TOKEN,
+      label: 'Jars',
+    },
+
+    votingEscrow: {
+      id: 'voting-escrow',
+      type: GroupType.POSITION,
+      label: 'Dill',
+    },
+
+    masterchefFarm: {
+      id: 'masterchef-farm',
+      type: GroupType.POSITION,
+      label: 'Farms',
+    },
+
+    masterchefV2Farm: {
+      id: 'masterchef-v2-farm',
+      type: GroupType.POSITION,
+      label: 'Farms',
+    },
+
+    singleStakingFarm: {
+      id: 'single-staking-farm',
+      type: GroupType.POSITION,
+      label: 'Farms',
+    },
+
+    pipka: {
+      id: 'pipka',
+      type: GroupType.TOKEN,
+      label: 'Pipkas',
+    },
+
+    puska: {
+      id: 'puska',
+      type: GroupType.POSITION,
+      label: 'Puskas',
+    },
   },
+
   primaryColor: '#1b8d54',
   tags: [AppTag.YIELD_AGGREGATOR],
+
   supportedNetworks: {
     [Network.ETHEREUM_MAINNET]: [AppAction.VIEW],
     [Network.ARBITRUM_MAINNET]: [AppAction.VIEW],
     [Network.POLYGON_MAINNET]: [AppAction.VIEW],
   },
+
   token: {
     address: '0x429881672b9ae42b8eba0e26cd9c73711b891ca5',
     network: Network.ETHEREUM_MAINNET,
